@@ -1,0 +1,179 @@
+body {
+  margin: 0;
+  font-family: Roboto-Regular, -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  /*  // background: linear-gradient(117.63deg, #0A1222 11.07%, #13203D 90.48%) url("/assets/sismo-landing-art.svg") no-repeat center center fixed; */
+  background: linear-gradient(117.63deg, #0a1222 11.07%, #13203d 90.48%);
+  color: #fffdf9;
+}
+
+p {
+  margin: 0px;
+  line-height: 21px;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0px;
+  padding: 0px;
+  font-family: "Roboto-Regular";
+}
+
+h1 {
+  font-size: 48px;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+h2 {
+  font-size: 40px;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+h3 {
+  font-size: 24px;
+}
+
+ul {
+  margin: 0px;
+  padding: 0px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+
+li {
+  list-style: none;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  padding: 15px;
+  border-radius: 0px;
+  width: 100%;
+  height: 150px;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+  border: 1px solid rgba(255, 253, 249, 0.5);
+  backdrop-filter: blur(10px);
+  border-radius: 10px;
+}
+
+li:hover {
+  border: 1px solid rgba(255, 253, 249, 1);
+  background-color: rgba(255, 253, 249, 0.1);
+}
+
+li:active {
+  transform: translate(1px, 1px);
+}
+
+li:before {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 70px;
+  height: 20px;
+  font-size: 14px;
+  font-weight: 700;
+  color: #13203d;
+  background-color: rgba(255, 253, 249, 1);
+  border-radius: 10px;
+}
+
+li:nth-child(1):before {
+  content: "level 0";
+}
+
+li:nth-child(2):before {
+  content: "level 1";
+}
+
+li:nth-child(3):before {
+  content: "level 2";
+}
+
+li:after {
+  position: absolute;
+  content: "→";
+  bottom: 15px;
+  right: 20px;
+  font-size: 25px;
+  font-weight: 600;
+  transition: transform 0.1s ease-in-out;
+}
+
+li:hover:after {
+  transform: translate(5px, 0px) scale(1.1);
+}
+
+input {
+  font-size: 20px;
+  font-family: "Roboto-Regular";
+  color: white;
+  width: 100%;
+  height: 53px;
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  background-color: transparent;
+  backdrop-filter: blur(20px);
+  padding: 0 10px;
+}
+
+input:focus {
+  outline: none;
+  border: 1px solid rgba(255, 255, 255, 1);
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
+}
+
+label {
+  font-size: 20px;
+  color: white;
+}
+
+@font-face {
+  font-family: "Roboto-Light";
+  src: local("Roboto"), url(../../public/fonts/Roboto-Light.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: "Roboto-Medium";
+  src: local("Roboto"), url(../../public/fonts/Roboto-Medium.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: "Roboto-Regular";
+  src: local("Roboto"), url(../../public/fonts/Roboto-Regular.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: "Roboto-Bold";
+  src: local("Roboto"), url(../../public/fonts/Roboto-Bold.ttf) format("truetype");
+}
