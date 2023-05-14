@@ -63,7 +63,7 @@ export default function Home() {
             <SismoConnectButton
             config={sismoConnectConfig}
             auths={[{ authType: AuthType.VAULT }]}
-            claims={[{ groupId: "0x3adc181791f9fb91199bb67f3d70baa2" }]}
+            claims={[{ groupId: "0x6cff585cc9b3708d47c50fab5363cb8e" }]}
             signature={{
               message: "License verification",
               isSelectableByUser: false, // Not allow the user to change the message (here his user name) during the Sismo Connect flow
